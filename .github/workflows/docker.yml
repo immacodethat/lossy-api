@@ -21,4 +21,4 @@ jobs:
           context: .
           pull: true
           push: true
-          tags: immacodethat/lossy-api:latest
+          tags: ghcr.io/immacodethat/lossy-api:latest
