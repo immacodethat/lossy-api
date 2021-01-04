@@ -7,8 +7,8 @@ const port = 3000
 const app = express()
 
 const limiter = rateLimit({
-  windowMs: 1000, // 1 second
-  max: 5 // limit each IP to 5 requests per windowMs
+  windowMs: 30 * 1000, // 30 seconds
+  max: 300 // limit each IP to 300 requests per windowMs
 })
 
 const monkey = chaos({
